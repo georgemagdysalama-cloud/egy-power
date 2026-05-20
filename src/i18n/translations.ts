@@ -201,4 +201,5 @@ export const translations = {
   },
 } as const;
 
-export type Dict = typeof translations.ar;
+type Mutable<T> = { -readonly [K in keyof T]: T[K] extends object ? Mutable<T[K]> : T[K] };
+export type Dict = Mutable<typeof translations.ar> & { dir: "rtl" | "ltr" };
