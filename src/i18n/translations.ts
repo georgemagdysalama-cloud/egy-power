@@ -201,5 +201,32 @@ export const translations = {
   },
 } as const;
 
-type Mutable<T> = { -readonly [K in keyof T]: T[K] extends object ? Mutable<T[K]> : T[K] };
-export type Dict = Mutable<typeof translations.ar> & { dir: "rtl" | "ltr" };
+// Loose dict type to support both locales
+export type Dict = {
+  dir: "rtl" | "ltr";
+  brand: string;
+  brandSub: string;
+  nav: { home: string; about: string; products: string; services: string; contact: string };
+  cta: { quote: string; contact: string; explore: string; learnMore: string };
+  switchLang: string;
+  hero: { eyebrow: string; title: string; subtitle: string; stat1: string; stat2: string; stat3: string };
+  sections: {
+    featuresTitle: string; featuresSub: string;
+    productsTitle: string; productsSub: string;
+    ctaTitle: string; ctaSub: string;
+  };
+  features: ReadonlyArray<{ title: string; desc: string }>;
+  products: ReadonlyArray<{ key: string; title: string; desc: string }>;
+  about: {
+    title: string; sub: string; p1: string; p2: string;
+    visionTitle: string; vision: string; missionTitle: string; mission: string;
+    values: ReadonlyArray<{ title: string; desc: string }>;
+  };
+  services: { title: string; sub: string; list: ReadonlyArray<{ title: string; desc: string }> };
+  contact: {
+    title: string; sub: string; name: string; email: string; phone: string; message: string; send: string;
+    addressLabel: string; phoneLabel: string; emailLabel: string; hoursLabel: string;
+    hours: string; address: string; success: string;
+  };
+  footer: { tag: string; quickLinks: string; contactInfo: string; rights: string };
+};
