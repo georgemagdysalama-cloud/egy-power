@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useLang } from "@/i18n/LanguageProvider";
+import logo from "@/assets/logo.png";
 
 export function Header() {
   const { t, toggle, lang } = useLang();
@@ -19,9 +20,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link to="/" className="flex items-center gap-2.5">
-          <span className="grid h-9 w-9 place-items-center rounded-md bg-primary text-primary-foreground shadow-[var(--shadow-elegant)]">
-            <Zap className="h-5 w-5" />
-          </span>
+          <img src={logo} alt="Egy Power" className="h-11 w-11 rounded-full object-contain" />
           <span className="flex flex-col leading-tight">
             <span className="text-base font-bold text-foreground">{t.brand}</span>
             <span className="text-[10px] font-semibold tracking-[0.18em] text-muted-foreground">

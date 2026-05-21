@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { Zap, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { useLang } from "@/i18n/LanguageProvider";
+import logo from "@/assets/logo.png";
 
 export function Footer() {
   const { t } = useLang();
@@ -11,9 +12,7 @@ export function Footer() {
       <div className="container mx-auto grid gap-10 px-4 py-14 md:grid-cols-4 md:px-6">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2.5">
-            <span className="grid h-9 w-9 place-items-center rounded-md bg-primary-foreground text-primary">
-              <Zap className="h-5 w-5" />
-            </span>
+            <img src={logo} alt="Egy Power" className="h-11 w-11 rounded-full bg-white object-contain" />
             <span className="text-lg font-bold">{t.brand}</span>
           </div>
           <p className="mt-4 max-w-md text-sm text-primary-foreground/75 leading-relaxed">
