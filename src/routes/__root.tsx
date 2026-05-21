@@ -76,12 +76,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Egy Power — توريدات كهربائية للمشروعات والمقاولات" },
       { name: "description", content: "إيجي باور: توريد مواسير EMT و RSC، فلكسبل، أسلاك وكابلات، صناديق توصيل، وإكسسوارات كهربائية بجودة عالية وأسعار تنافسية." },
       { name: "author", content: "Egy Power" },
-      { property: "og:title", content: "Egy Power — Electrical Supplies" },
-      { property: "og:description", content: "Trusted partner in electrical materials for contractors and projects in Egypt." },
+      { property: "og:title", content: "Egy Power — توريدات كهربائية للمشروعات والمقاولات" },
+      { property: "og:description", content: "إيجي باور: توريد مواسير EMT و RSC، فلكسبل، أسلاك وكابلات، صناديق توصيل، وإكسسوارات كهربائية بجودة عالية وأسعار تنافسية." },
       { property: "og:site_name", content: "Egy Power" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Egy Power — توريدات كهربائية للمشروعات والمقاولات" },
+      { name: "twitter:description", content: "إيجي باور: توريد مواسير EMT و RSC، فلكسبل، أسلاك وكابلات، صناديق توصيل، وإكسسوارات كهربائية بجودة عالية وأسعار تنافسية." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/72761a19-088a-42c4-ab65-dc14815e6a94/id-preview-2f30d024--6e2ae503-cf19-4134-b4ae-e8212ebde825.lovable.app-1779347640457.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/72761a19-088a-42c4-ab65-dc14815e6a94/id-preview-2f30d024--6e2ae503-cf19-4134-b4ae-e8212ebde825.lovable.app-1779347640457.png" },
     ],
     links: [
       {
