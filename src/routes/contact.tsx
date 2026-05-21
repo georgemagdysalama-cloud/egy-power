@@ -71,7 +71,7 @@ function ContactPage() {
 
         <aside className="space-y-4">
           <InfoCard icon={MapPin} label={t.contact.addressLabel} value={t.contact.address} />
-          <InfoCard icon={Phone} label={t.contact.phoneLabel} value="+20 100 000 0000" ltr />
+          <InfoCard icon={Phone} label={t.contact.phoneLabel} value="+20 101 696 6999" ltr />
           <InfoCard icon={Mail} label={t.contact.emailLabel} value="info@egypower.com" ltr />
           <InfoCard icon={Clock} label={t.contact.hoursLabel} value={t.contact.hours} />
         </aside>

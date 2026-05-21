@@ -36,7 +36,7 @@ export function Footer() {
           <h4 className="mb-3 text-sm font-semibold">{t.footer.contactInfo}</h4>
           <ul className="space-y-2.5 text-sm text-primary-foreground/75">
             <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0" /><span>{t.contact.address}</span></li>
-            <li className="flex items-center gap-2"><Phone className="h-4 w-4 shrink-0" /><a href="tel:+201000000000" dir="ltr">+20 100 000 0000</a></li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4 shrink-0" /><a href="tel:+201016966999" dir="ltr">+20 101 696 6999</a></li>
             <li className="flex items-center gap-2"><Mail className="h-4 w-4 shrink-0" /><a href="mailto:info@egypower.com">info@egypower.com</a></li>
           </ul>
         </div>
