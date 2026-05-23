@@ -7,6 +7,8 @@ import imgFlexible from "@/assets/product-flexible.jpg";
 import imgCables from "@/assets/product-cables.jpg";
 import imgBoxes from "@/assets/product-boxes.jpg";
 import imgAccessories from "@/assets/product-accessories.jpg";
+import imgPvc from "@/assets/product-pvc.jpg";
+import imgTray from "@/assets/product-tray.jpg";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
@@ -28,6 +30,8 @@ const images: Record<string, string> = {
   cables: imgCables,
   boxes: imgBoxes,
   accessories: imgAccessories,
+  pvc: imgPvc,
+  tray: imgTray,
 };
 
 function ProductsPage() {
