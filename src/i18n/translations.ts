@@ -48,6 +48,8 @@ export const translations = {
       { key: "cables", title: "أسلاك وكابلات", desc: "كابلات نحاسية بمقاطع وألوان متنوعة لكل الأحمال." },
       { key: "boxes", title: "صناديق توصيل", desc: "علب توصيل معدنية وبلاستيكية بمقاسات قياسية." },
       { key: "accessories", title: "إكسسوارات كهربائية", desc: "وصلات، كلامبات، فيتنجات، ومستلزمات تكميلية." },
+      { key: "pvc", title: "مواسير وإكسسوارات PVC", desc: "مواسير PVC كهربائية وأكواع ووصلات وعلب بمقاسات متنوعة." },
+      { key: "tray", title: "كابل تراي وإكسسواراته", desc: "حوامل كابلات (Cable Tray) معدنية مع الأكواع والوصلات والأغطية." },
     ],
     about: {
       title: "من نحن",
@@ -147,6 +149,8 @@ export const translations = {
       { key: "cables", title: "Wires & Cables", desc: "Copper cables in multiple gauges and colors for any load." },
       { key: "boxes", title: "Junction Boxes", desc: "Metal and plastic junction boxes in standard sizes." },
       { key: "accessories", title: "Electrical Accessories", desc: "Connectors, clamps, fittings, and complementary supplies." },
+      { key: "pvc", title: "PVC Conduits & Accessories", desc: "PVC electrical conduits, elbows, couplers and boxes in various sizes." },
+      { key: "tray", title: "Cable Tray & Accessories", desc: "Metal cable trays with bends, couplers and covers for industrial wiring." },
     ],
     about: {
       title: "About Us",

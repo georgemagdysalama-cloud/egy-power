@@ -11,8 +11,8 @@ export function Footer() {
     <footer className="mt-24 border-t border-border bg-primary text-primary-foreground">
       <div className="container mx-auto grid gap-10 px-4 py-14 md:grid-cols-4 md:px-6">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2.5">
-            <img src={logo} alt="Egy Power" className="h-11 w-11 rounded-full bg-white object-contain" />
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="Egy Power" className="h-16 w-16 rounded-full bg-white object-contain" />
             <span className="text-lg font-bold">{t.brand}</span>
           </div>
           <p className="mt-4 max-w-md text-sm text-primary-foreground/75 leading-relaxed">

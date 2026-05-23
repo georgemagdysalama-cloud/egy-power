@@ -19,8 +19,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link to="/" className="flex items-center gap-2.5">
-          <img src={logo} alt="Egy Power" className="h-11 w-11 rounded-full object-contain" />
+        <Link to="/" className="flex items-center gap-3">
+          <img src={logo} alt="Egy Power" className="h-14 w-14 rounded-full object-contain md:h-16 md:w-16" />
           <span className="flex flex-col leading-tight">
             <span className="text-base font-bold text-foreground">{t.brand}</span>
             <span className="text-[10px] font-semibold tracking-[0.18em] text-muted-foreground">
