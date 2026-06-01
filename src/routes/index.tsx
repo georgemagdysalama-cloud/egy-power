@@ -3,11 +3,11 @@ import { ArrowRight, ShieldCheck, Truck, BadgeDollarSign, Headphones } from "luc
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { useLang } from "@/i18n/LanguageProvider";
 import hero from "@/assets/hero-electrical.jpg";
-import imgConduit from "@/assets/product-conduit.jpg";
-import imgFlexible from "@/assets/product-flexible.jpg";
-import imgCables from "@/assets/product-cables.jpg";
-import imgBoxes from "@/assets/product-boxes.jpg";
-import imgAccessories from "@/assets/product-accessories.jpg";
+import imgConduit from "@/assets/product-conduit.webp";
+import imgFlexible from "@/assets/product-flexible.webp";
+import imgCables from "@/assets/product-cables.webp";
+import imgBoxes from "@/assets/product-boxes.webp";
+import imgAccessories from "@/assets/product-accessories.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({

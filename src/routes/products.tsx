@@ -2,16 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { PageHeader } from "@/components/site/PageHeader";
 import { useLang } from "@/i18n/LanguageProvider";
-import imgConduit from "@/assets/product-conduit.jpg";
-import imgFlexible from "@/assets/product-flexible.jpg";
-import imgCables from "@/assets/product-cables.jpg";
-import imgBoxes from "@/assets/product-boxes.jpg";
-import imgAccessories from "@/assets/product-accessories.jpg";
-import imgPvc from "@/assets/product-pvc.jpg";
-import imgTray from "@/assets/product-tray.jpg";
-import imgEarthing from "@/assets/product-earthing.jpg";
-import imgEarthing2 from "@/assets/product-earthing-2.jpg";
-import imgEarthing3 from "@/assets/product-earthing-3.jpg";
+import imgConduit from "@/assets/product-conduit.webp";
+import imgFlexible from "@/assets/product-flexible.webp";
+import imgCables from "@/assets/product-cables.webp";
+import imgBoxes from "@/assets/product-boxes.webp";
+import imgAccessories from "@/assets/product-accessories.webp";
+import imgPvc from "@/assets/product-pvc.webp";
+import imgTray from "@/assets/product-tray.webp";
+import imgEarthing from "@/assets/product-earthing.webp";
+import imgEarthing2 from "@/assets/product-earthing-2.webp";
+import imgEarthing3 from "@/assets/product-earthing-3.webp";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
