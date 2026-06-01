@@ -50,6 +50,7 @@ export const translations = {
       { key: "accessories", title: "إكسسوارات كهربائية", desc: "وصلات، كلامبات، فيتنجات، ومستلزمات تكميلية." },
       { key: "pvc", title: "مواسير وإكسسوارات PVC", desc: "مواسير PVC كهربائية وأكواع ووصلات وعلب بمقاسات متنوعة." },
       { key: "tray", title: "كابل تراي وإكسسواراته", desc: "حوامل كابلات (Cable Tray) معدنية مع الأكواع والوصلات والأغطية." },
+      { key: "earthing", title: "أنظمة التأريض ومكوناتها", desc: "بارات نحاسية، إلكترودات تأريض، كابلات نحاس، كلامبات، علب تفتيش، وشبكات تأريض." },
     ],
     about: {
       title: "من نحن",
@@ -151,6 +152,7 @@ export const translations = {
       { key: "accessories", title: "Electrical Accessories", desc: "Connectors, clamps, fittings, and complementary supplies." },
       { key: "pvc", title: "PVC Conduits & Accessories", desc: "PVC electrical conduits, elbows, couplers and boxes in various sizes." },
       { key: "tray", title: "Cable Tray & Accessories", desc: "Metal cable trays with bends, couplers and covers for industrial wiring." },
+      { key: "earthing", title: "Earthing Systems & Components", desc: "Copper bars, earth rods, copper cables, clamps, inspection pits and earthing grids." },
     ],
     about: {
       title: "About Us",
