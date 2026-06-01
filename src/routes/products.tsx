@@ -9,6 +9,7 @@ import imgBoxes from "@/assets/product-boxes.jpg";
 import imgAccessories from "@/assets/product-accessories.jpg";
 import imgPvc from "@/assets/product-pvc.jpg";
 import imgTray from "@/assets/product-tray.jpg";
+import imgEarthing from "@/assets/product-earthing.jpg";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
@@ -32,6 +33,7 @@ const images: Record<string, string> = {
   accessories: imgAccessories,
   pvc: imgPvc,
   tray: imgTray,
+  earthing: imgEarthing,
 };
 
 function ProductsPage() {
