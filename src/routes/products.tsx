@@ -12,6 +12,8 @@ import imgTray from "@/assets/product-tray.webp";
 import imgEarthing from "@/assets/product-earthing.webp";
 import imgEarthing2 from "@/assets/product-earthing-2.webp";
 import imgEarthing3 from "@/assets/product-earthing-3.webp";
+import imgBoxes2 from "@/assets/product-boxes-2.webp";
+import imgBreakers from "@/assets/product-breakers.webp";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
@@ -40,6 +42,7 @@ const images: Record<string, string> = {
 
 const galleries: Record<string, string[]> = {
   earthing: [imgEarthing, imgEarthing2, imgEarthing3],
+  boxes: [imgBoxes, imgBoxes2, imgBreakers],
 };
 
 function ProductsPage() {
