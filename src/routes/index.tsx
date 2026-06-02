@@ -8,6 +8,9 @@ import imgFlexible from "@/assets/product-flexible.webp";
 import imgCables from "@/assets/product-cables.webp";
 import imgBoxes from "@/assets/product-boxes.webp";
 import imgAccessories from "@/assets/product-accessories.webp";
+import imgPvc from "@/assets/product-pvc.webp";
+import imgTray from "@/assets/product-tray.webp";
+import imgEarthing from "@/assets/product-earthing.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -29,6 +32,9 @@ const productImages: Record<string, string> = {
   cables: imgCables,
   boxes: imgBoxes,
   accessories: imgAccessories,
+  pvc: imgPvc,
+  tray: imgTray,
+  earthing: imgEarthing,
 };
 
 const featureIcons = [ShieldCheck, Truck, BadgeDollarSign, Headphones];
@@ -142,7 +148,8 @@ function Index() {
                     alt={p.title}
                     width={800}
                     height={600}
-                    loading="lazy"
+                    loading={p.key === "pvc" || p.key === "tray" || p.key === "earthing" ? "eager" : "lazy"}
+                    fetchPriority={p.key === "pvc" || p.key === "tray" || p.key === "earthing" ? "high" : "auto"}
                     className="h-full w-full object-cover transition duration-500 hover:scale-105"
                   />
                 </div>
