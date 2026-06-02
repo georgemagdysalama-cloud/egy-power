@@ -64,7 +64,8 @@ function ProductsPage() {
                         alt={p.title}
                         width={800}
                         height={600}
-                        loading="lazy"
+                        loading={p.key === "earthing" ? "eager" : "lazy"}
+                        fetchPriority={p.key === "earthing" ? "high" : "auto"}
                         className="aspect-[4/3] w-full object-cover"
                       />
                     </div>
@@ -75,7 +76,8 @@ function ProductsPage() {
                           alt={`${p.title} ${idx + 2}`}
                           width={400}
                           height={300}
-                          loading="lazy"
+                          loading={p.key === "earthing" ? "eager" : "lazy"}
+                          fetchPriority={p.key === "earthing" ? "high" : "auto"}
                           className="aspect-[4/3] w-full object-cover"
                         />
                       </div>
@@ -88,7 +90,8 @@ function ProductsPage() {
                       alt={p.title}
                       width={800}
                       height={600}
-                      loading="lazy"
+                      loading={p.key === "pvc" || p.key === "tray" ? "eager" : "lazy"}
+                      fetchPriority={p.key === "pvc" || p.key === "tray" ? "high" : "auto"}
                       className="aspect-[4/3] w-full object-cover"
                     />
                   </div>
