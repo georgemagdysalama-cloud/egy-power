@@ -148,7 +148,8 @@ function Index() {
                     alt={p.title}
                     width={800}
                     height={600}
-                    loading="lazy"
+                    loading={p.key === "pvc" || p.key === "tray" || p.key === "earthing" ? "eager" : "lazy"}
+                    fetchPriority={p.key === "pvc" || p.key === "tray" || p.key === "earthing" ? "high" : "auto"}
                     className="h-full w-full object-cover transition duration-500 hover:scale-105"
                   />
                 </div>
