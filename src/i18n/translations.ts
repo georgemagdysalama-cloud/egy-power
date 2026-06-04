@@ -33,6 +33,8 @@ export const translations = {
       featuresSub: "نلتزم بتقديم أفضل الحلول الكهربائية لشركات المقاولات",
       productsTitle: "فئات منتجاتنا",
       productsSub: "كل ما تحتاجه لتنفيذ أعمالك الكهربائية في مكان واحد",
+      projectsTitle: "مشاريع إيجي باور",
+      projectsSub: "شاركنا في تنفيذ مشاريع كبرى في جميع أنحاء مصر بأعلى المعايير الفنية.",
       ctaTitle: "جاهز لبدء مشروعك القادم؟",
       ctaSub: "تواصل مع فريقنا الآن للحصول على عرض سعر مخصص خلال 24 ساعة.",
     },
@@ -51,6 +53,12 @@ export const translations = {
       { key: "pvc", title: "مواسير وإكسسوارات PVC", desc: "مواسير PVC كهربائية وأكواع ووصلات وعلب بمقاسات متنوعة." },
       { key: "tray", title: "كابل تراي وإكسسواراته", desc: "حوامل كابلات (Cable Tray) معدنية مع الأكواع والوصلات والأغطية." },
       { key: "earthing", title: "أنظمة التأريض ومكوناتها", desc: "بارات نحاسية، إلكترودات تأريض، كابلات نحاس، كلامبات، علب تفتيش، وشبكات تأريض." },
+    ],
+    projects: [
+      { key: "capital", title: "العاصمة الإدارية الجديدة", desc: "توريد مواسير وفلكسبل وإكسسوارات كهربائية لمشاريع العاصمة الإدارية." },
+      { key: "beach", title: "أبراج الساحل الشمالي", desc: "حلول كهربائية متكاملة لأبراج سكنية فاخرة على البحر." },
+      { key: "rixoz", title: "ريكوز مول - العاصمة الجديدة", desc: "توريدات كهربائية لمول تجاري متعدد الاستخدامات." },
+      { key: "residential", title: "مجمع سكني - القاهرة الجديدة", desc: "مواسير وكابلات وصناديق توصيل لمشروع سكني راقي." },
     ],
     about: {
       title: "من نحن",
@@ -135,6 +143,8 @@ export const translations = {
       featuresSub: "We deliver the best electrical solutions for contractors.",
       productsTitle: "Our product categories",
       productsSub: "Everything you need for your electrical work in one place.",
+      projectsTitle: "Egy Power Projects",
+      projectsSub: "We've supplied large-scale projects across Egypt to the highest technical standards.",
       ctaTitle: "Ready to start your next project?",
       ctaSub: "Contact our team now and get a custom quote within 24 hours.",
     },
@@ -153,6 +163,12 @@ export const translations = {
       { key: "pvc", title: "PVC Conduits & Accessories", desc: "PVC electrical conduits, elbows, couplers and boxes in various sizes." },
       { key: "tray", title: "Cable Tray & Accessories", desc: "Metal cable trays with bends, couplers and covers for industrial wiring." },
       { key: "earthing", title: "Earthing Systems & Components", desc: "Copper bars, earth rods, copper cables, clamps, inspection pits and earthing grids." },
+    ],
+    projects: [
+      { key: "capital", title: "New Administrative Capital", desc: "Conduits, flexible pipes, and accessories supplied to NAC mega-projects." },
+      { key: "beach", title: "North Coast Towers", desc: "Complete electrical material supply for luxury beachfront towers." },
+      { key: "rixoz", title: "Rixoz Mall — New Capital", desc: "Electrical supplies for a mixed-use commercial mall." },
+      { key: "residential", title: "Residential Compound — New Cairo", desc: "Conduits, cables, and junction boxes for a premium residential project." },
     ],
     about: {
       title: "About Us",
@@ -219,10 +235,12 @@ export type Dict = {
   sections: {
     featuresTitle: string; featuresSub: string;
     productsTitle: string; productsSub: string;
+    projectsTitle: string; projectsSub: string;
     ctaTitle: string; ctaSub: string;
   };
   features: ReadonlyArray<{ title: string; desc: string }>;
   products: ReadonlyArray<{ key: string; title: string; desc: string }>;
+  projects: ReadonlyArray<{ key: string; title: string; desc: string }>;
   about: {
     title: string; sub: string; p1: string; p2: string;
     visionTitle: string; vision: string; missionTitle: string; mission: string;
