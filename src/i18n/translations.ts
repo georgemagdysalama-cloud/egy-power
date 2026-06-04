@@ -235,10 +235,12 @@ export type Dict = {
   sections: {
     featuresTitle: string; featuresSub: string;
     productsTitle: string; productsSub: string;
+    projectsTitle: string; projectsSub: string;
     ctaTitle: string; ctaSub: string;
   };
   features: ReadonlyArray<{ title: string; desc: string }>;
   products: ReadonlyArray<{ key: string; title: string; desc: string }>;
+  projects: ReadonlyArray<{ key: string; title: string; desc: string }>;
   about: {
     title: string; sub: string; p1: string; p2: string;
     visionTitle: string; vision: string; missionTitle: string; mission: string;
