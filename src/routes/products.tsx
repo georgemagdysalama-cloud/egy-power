@@ -44,6 +44,7 @@ const images: Record<string, string> = {
 const galleries: Record<string, string[]> = {
   earthing: [imgEarthing, imgEarthing2, imgEarthing3],
   boxes: [imgBoxes, imgBoxes2, imgBreakers],
+  cables: [imgCables, imgCables2],
 };
 
 function ProductsPage() {
