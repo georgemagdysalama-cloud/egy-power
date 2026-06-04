@@ -11,6 +11,10 @@ import imgAccessories from "@/assets/product-accessories.webp";
 import imgPvc from "@/assets/product-pvc.webp";
 import imgTray from "@/assets/product-tray.webp";
 import imgEarthing from "@/assets/product-earthing.webp";
+import projCapital from "@/assets/project-capital.jpg.asset.json";
+import projBeach from "@/assets/project-beach-towers.jpg.asset.json";
+import projRixoz from "@/assets/project-rixoz.jpg.asset.json";
+import projResidential from "@/assets/project-residential.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -38,6 +42,13 @@ const productImages: Record<string, string> = {
 };
 
 const featureIcons = [ShieldCheck, Truck, BadgeDollarSign, Headphones];
+
+const projectImages: Record<string, string> = {
+  capital: projCapital.url,
+  beach: projBeach.url,
+  rixoz: projRixoz.url,
+  residential: projResidential.url,
+};
 
 function Index() {
   const { t } = useLang();
@@ -168,6 +179,32 @@ function Index() {
               {t.cta.learnMore} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section className="container mx-auto px-4 py-20 md:px-6">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="text-3xl font-bold text-foreground sm:text-4xl">{t.sections.projectsTitle}</h2>
+          <p className="mt-3 text-muted-foreground">{t.sections.projectsSub}</p>
+        </div>
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {t.projects.map((p) => (
+            <article key={p.key} className="group overflow-hidden rounded-xl border border-border bg-card transition hover:shadow-[var(--shadow-elegant)]">
+              <div className="aspect-[4/3] overflow-hidden bg-primary/5">
+                <img
+                  src={projectImages[p.key]}
+                  alt={p.title}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-5">
+                <h3 className="text-base font-bold text-foreground">{p.title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 
