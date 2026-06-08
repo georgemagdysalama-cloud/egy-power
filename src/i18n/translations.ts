@@ -23,7 +23,7 @@ export const translations = {
       eyebrow: "توريدات كهربائية للمشروعات والمقاولات",
       title: "شريكك الموثوق في الخامات الكهربائية",
       subtitle:
-        "نوفّر مواسير EMT و RSC، الفلكسبل، الأسلاك والكابلات، صناديق التوصيل، والإكسسوارات الكهربائية بجودة عالية وأسعار تنافسية وسرعة توريد.",
+        "نوفّر مواسير EMT و IMC و RIGID، الفلكسبل بكل أنواعه، الأسلاك والكابلات، مواسير PVC وإكسسواراتها، اللوحات المعدنية والقواطع، الكابل تراي، وأنظمة التأريض — بجودة عالية وأسعار تنافسية وسرعة توريد.",
       stat1: "+10 سنوات خبرة",
       stat2: "+500 مشروع",
       stat3: "دعم فني 24/7",
@@ -52,6 +52,7 @@ export const translations = {
       { key: "accessories", title: "إكسسوارات كهربائية", desc: "وصلات، كلامبات، فيتنجات، ومستلزمات تكميلية." },
       { key: "pvc", title: "مواسير وإكسسوارات PVC", desc: "مواسير PVC كهربائية وأكواع ووصلات وعلب بمقاسات متنوعة." },
       { key: "tray", title: "كابل تراي وإكسسواراته", desc: "حوامل كابلات (Cable Tray) معدنية مع الأكواع والوصلات والأغطية." },
+      { key: "panels", title: "لوحات كهربائية معدنية", desc: "لوحات توزيع كهربائية معدنية بمقاسات وتصميمات متنوعة، مجهّزة بالقواطع والملحقات لمشاريع المقاولات والصناعات." },
       { key: "earthing", title: "أنظمة التأريض ومكوناتها", desc: "بارات نحاسية، إلكترودات تأريض، كابلات نحاس، كلامبات، علب تفتيش، وشبكات تأريض." },
     ],
     projects: [
@@ -133,7 +134,7 @@ export const translations = {
       eyebrow: "Electrical supplies for projects & contractors",
       title: "Your trusted partner in electrical materials",
       subtitle:
-        "EMT & RSC conduits, flexible tubing, wires & cables, junction boxes, and electrical accessories — premium quality, competitive prices, and fast delivery.",
+        "EMT, IMC & RIGID conduits, all types of flexible tubing, wires & cables, PVC conduits & accessories, metal panels & breakers, cable trays, and earthing systems — premium quality, competitive prices, and fast delivery.",
       stat1: "10+ Years",
       stat2: "500+ Projects",
       stat3: "24/7 Support",
@@ -162,6 +163,7 @@ export const translations = {
       { key: "accessories", title: "Electrical Accessories", desc: "Connectors, clamps, fittings, and complementary supplies." },
       { key: "pvc", title: "PVC Conduits & Accessories", desc: "PVC electrical conduits, elbows, couplers and boxes in various sizes." },
       { key: "tray", title: "Cable Tray & Accessories", desc: "Metal cable trays with bends, couplers and covers for industrial wiring." },
+      { key: "panels", title: "Metal Electrical Panels", desc: "Metal electrical distribution panels in various sizes and designs, equipped with breakers and accessories for contracting and industrial projects." },
       { key: "earthing", title: "Earthing Systems & Components", desc: "Copper bars, earth rods, copper cables, clamps, inspection pits and earthing grids." },
     ],
     projects: [
