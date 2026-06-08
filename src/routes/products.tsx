@@ -12,6 +12,7 @@ import imgTray from "@/assets/product-tray.webp";
 import imgEarthing from "@/assets/product-earthing.webp";
 import imgEarthing2 from "@/assets/product-earthing-2.webp";
 import imgEarthing3 from "@/assets/product-earthing-3.webp";
+import imgPanels from "@/assets/product-panels.webp";
 import imgBoxes2 from "@/assets/product-boxes-2.webp";
 import imgBreakers from "@/assets/product-breakers.webp";
 import imgCables2 from "@/assets/cables-option-5.webp";
@@ -38,6 +39,7 @@ const images: Record<string, string> = {
   accessories: imgAccessories,
   pvc: imgPvc,
   tray: imgTray,
+  panels: imgPanels,
   earthing: imgEarthing,
 };
 

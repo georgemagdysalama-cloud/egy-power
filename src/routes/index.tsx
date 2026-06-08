@@ -11,6 +11,7 @@ import imgAccessories from "@/assets/product-accessories.webp";
 import imgPvc from "@/assets/product-pvc.webp";
 import imgTray from "@/assets/product-tray.webp";
 import imgEarthing from "@/assets/product-earthing.webp";
+import imgPanels from "@/assets/product-panels.webp";
 import projCapital from "@/assets/project-capital.jpg.asset.json";
 import projBeach from "@/assets/project-beach-towers.jpg.asset.json";
 import projRixoz from "@/assets/project-rixoz.jpg.asset.json";
@@ -38,6 +39,7 @@ const productImages: Record<string, string> = {
   accessories: imgAccessories,
   pvc: imgPvc,
   tray: imgTray,
+  panels: imgPanels,
   earthing: imgEarthing,
 };
 
