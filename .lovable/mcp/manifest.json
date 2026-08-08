@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "sdk_version": "0.26.1",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "egy-power-connect",
+      "version": "0.1.0",
+      "title": "Egy Power Connect"
+    },
+    "tools": [
+      {
+        "name": "list_product_categories",
+        "title": "List product categories",
+        "description": "List Egy Power's electrical product categories (conduits, flexible tubing, wires & cables, junction boxes & breakers, accessories, PVC, cable tray, metal panels, earthing systems) with descriptions.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "ar",
+                "en"
+              ],
+              "description": "Language of the returned content: 'ar' for Arabic, 'en' for English."
+            }
+          },
+          "required": [
+            "language"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_services",
+        "title": "List services",
+        "description": "List the services Egy Power offers to contractors and projects, such as bulk project supply, technical consulting, wholesale pricing, delivery, warranty and after-sales support.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "ar",
+                "en"
+              ],
+              "description": "Language of the returned content: 'ar' for Arabic, 'en' for English."
+            }
+          },
+          "required": [
+            "language"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_projects",
+        "title": "List reference projects",
+        "description": "List notable projects Egy Power has supplied electrical materials to across Egypt, with a short description of each.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "ar",
+                "en"
+              ],
+              "description": "Language of the returned content: 'ar' for Arabic, 'en' for English."
+            }
+          },
+          "required": [
+            "language"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_company_info",
+        "title": "Get company info",
+        "description": "Get Egy Power's public company profile: who we are, vision, mission, values, working hours, address, phone and WhatsApp contact details.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "language": {
+              "type": "string",
+              "enum": [
+                "ar",
+                "en"
+              ],
+              "description": "Language of the returned content: 'ar' for Arabic, 'en' for English."
+            }
+          },
+          "required": [
+            "language"
+          ],
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
