@@ -45,7 +45,7 @@ export const translations = {
       { title: "دعم فني", desc: "فريق متخصص لمساعدتك في اختيار المنتج المناسب." },
     ],
     products: [
-      { key: "conduit", title: "مواسير كهربائية EMT و IMC و RIGID", desc: "مواسير معدنية مجلفنة بأنواعها المختلفة: EMT (خفيفة سهلة التركيب)، IMC (متوسطة السُمك وأعلى مقاومة)، وRIGID (ثقيلة للتطبيقات الصناعية والخارجية) — بمقاسات متنوعة لجميع التطبيقات." },
+      { key: "conduit", title: "مواسير كهربائية EMT و IMC و RIGID", desc: "مواسير معدنية مجلفنة بأنواعها المختلفة: EMT (خفيفة سهلة التركيب)، IMC (متوسطة السُمك وأعلى مقاومة)، وRIGID (ثقيلة للتطبيقات الصناعية والخارجية) — بمقاسات متنوعة، مع كل الإكسسوارات: الجلب (الوصلات) والأفياش (الكونيكترز) والأكواع 90° والبواط المعدنية بمقاساتها المختلفة." },
       { key: "flexible", title: "فلكسبل (مواسير مرنة)", desc: "حماية مرنة للأسلاك في الأماكن الضيقة والمعقدة." },
       { key: "cables", title: "أسلاك وكابلات", desc: "كابلات نحاسية بمقاطع وألوان متنوعة لكل الأحمال." },
       { key: "boxes", title: "صناديق توصيل والقواطع الكهربائية", desc: "علب توصيل معدنية وبلاستيكية بمقاسات قياسية، بالإضافة إلى القواطع الكهربائية (MCB) وملحقاتها." },
@@ -156,7 +156,7 @@ export const translations = {
       { title: "Technical Support", desc: "A dedicated team to help you choose the right product." },
     ],
     products: [
-      { key: "conduit", title: "EMT, IMC & RIGID Conduits", desc: "Galvanized metal conduits in all types: EMT (lightweight, easy to install), IMC (medium-wall, higher resistance), and RIGID (heavy-duty for industrial and outdoor use) — available in various sizes." },
+      { key: "conduit", title: "EMT, IMC & RIGID Conduits", desc: "Galvanized metal conduits in all types: EMT (lightweight, easy to install), IMC (medium-wall, higher resistance), and RIGID (heavy-duty for industrial and outdoor use) — in all sizes, with full accessories: couplings, connectors, 90° elbows and metal junction boxes in various sizes." },
       { key: "flexible", title: "Flexible Conduits", desc: "Flexible wire protection for tight and complex spaces." },
       { key: "cables", title: "Wires & Cables", desc: "Copper cables in multiple gauges and colors for any load." },
       { key: "boxes", title: "Junction Boxes & Circuit Breakers", desc: "Metal and plastic junction boxes in standard sizes, plus miniature circuit breakers (MCB) and accessories." },

@@ -16,6 +16,9 @@ import imgPanels from "@/assets/product-panels.webp";
 import imgBoxes2 from "@/assets/product-boxes-2.webp";
 import imgBreakers from "@/assets/product-breakers.webp";
 import imgCables2 from "@/assets/cables-option-5.webp";
+import imgAccCouplings from "@/assets/product-acc-couplings.webp";
+import imgAccElbows from "@/assets/product-acc-elbows.webp";
+import imgAccMetalBoxes from "@/assets/product-acc-metalboxes.webp";
 
 export const Route = createFileRoute("/products")({
   head: () => ({
@@ -47,6 +50,7 @@ const galleries: Record<string, string[]> = {
   earthing: [imgEarthing, imgEarthing2, imgEarthing3],
   boxes: [imgBoxes, imgBoxes2, imgBreakers],
   cables: [imgCables, imgCables2],
+  conduit: [imgConduit, imgAccCouplings, imgAccElbows, imgAccMetalBoxes],
 };
 
 function ProductsPage() {
