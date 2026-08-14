@@ -14,9 +14,15 @@ export function SiteLayout({ children }: { children: ReactNode }) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"
-        className="fixed bottom-5 left-5 z-50 grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110"
+        className="group fixed bottom-6 left-6 z-50 flex items-center gap-2"
       >
-        <MessageCircle className="h-7 w-7" />
+        <span className="pointer-events-none hidden rounded-full bg-[#25D366] px-3 py-1.5 text-sm font-bold text-white shadow-md group-hover:block sm:block">
+          تواصل معنا
+        </span>
+        <span className="relative grid h-16 w-16 place-items-center rounded-full bg-[#25D366] text-white shadow-xl transition-transform hover:scale-110">
+          <span className="absolute inset-0 animate-ping rounded-full bg-[#25D366] opacity-60" />
+          <MessageCircle className="relative h-8 w-8" />
+        </span>
       </a>
     </div>
   );
