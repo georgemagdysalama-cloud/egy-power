@@ -4,6 +4,8 @@ import { PageHeader } from "@/components/site/PageHeader";
 import { useLang } from "@/i18n/LanguageProvider";
 import imgConduit from "@/assets/product-conduit.webp";
 import imgFlexible from "@/assets/product-flexible.webp";
+import imgFlexible2 from "@/assets/product-flexible-2.jpg";
+import imgFlexible3 from "@/assets/product-flexible-3.jpg";
 import imgCables from "@/assets/product-cables.webp";
 import imgBoxes from "@/assets/product-boxes.webp";
 import imgAccessories from "@/assets/product-accessories.webp";
@@ -51,6 +53,7 @@ const galleries: Record<string, string[]> = {
   boxes: [imgBoxes, imgBoxes2, imgBreakers],
   cables: [imgCables, imgCables2],
   conduit: [imgConduit, imgAccCouplings, imgAccElbows, imgAccMetalBoxes],
+  flexible: [imgFlexible, imgFlexible2, imgFlexible3],
 };
 
 function ProductsPage() {
