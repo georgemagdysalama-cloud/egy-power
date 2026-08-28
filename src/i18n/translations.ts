@@ -46,7 +46,7 @@ export const translations = {
     ],
     products: [
       { key: "conduit", title: "مواسير كهربائية EMT و IMC و RIGID", desc: "مواسير معدنية مجلفنة بأنواعها المختلفة: EMT (خفيفة سهلة التركيب)، IMC (متوسطة السُمك وأعلى مقاومة)، وRIGID (ثقيلة للتطبيقات الصناعية والخارجية) — بمقاسات متنوعة، مع كل الإكسسوارات: الجلب (الوصلات) والأفياش (الكونيكترز) والأكواع 90° والبواط المعدنية بمقاساتها المختلفة." },
-      { key: "flexible", title: "فلكسبل (مواسير مرنة)", desc: "حماية مرنة للأسلاك في الأماكن الضيقة والمعقدة." },
+      { key: "flexible", title: "فلكسبل (مواسير مرنة)", desc: "فلكسبل معدني مجلفن وفلكسبل معزول (مغطى PVC) خفيف وتقيل، بكل المقاسات — لحماية مرنة للأسلاك في الأماكن الضيقة والمعقدة." },
       { key: "cables", title: "أسلاك وكابلات", desc: "كابلات نحاسية بمقاطع وألوان متنوعة لكل الأحمال." },
       { key: "boxes", title: "صناديق توصيل والقواطع الكهربائية", desc: "علب توصيل معدنية وبلاستيكية بمقاسات قياسية، بالإضافة إلى القواطع الكهربائية (MCB) وملحقاتها." },
       { key: "accessories", title: "إكسسوارات كهربائية", desc: "وصلات، كلامبات، فيتنجات، ومستلزمات تكميلية." },
@@ -157,7 +157,7 @@ export const translations = {
     ],
     products: [
       { key: "conduit", title: "EMT, IMC & RIGID Conduits", desc: "Galvanized metal conduits in all types: EMT (lightweight, easy to install), IMC (medium-wall, higher resistance), and RIGID (heavy-duty for industrial and outdoor use) — in all sizes, with full accessories: couplings, connectors, 90° elbows and metal junction boxes in various sizes." },
-      { key: "flexible", title: "Flexible Conduits", desc: "Flexible wire protection for tight and complex spaces." },
+      { key: "flexible", title: "Flexible Conduits", desc: "Galvanized metal flexible conduit and PVC-coated insulated flexible conduit, light and heavy duty, in all sizes — flexible wire protection for tight and complex spaces." },
       { key: "cables", title: "Wires & Cables", desc: "Copper cables in multiple gauges and colors for any load." },
       { key: "boxes", title: "Junction Boxes & Circuit Breakers", desc: "Metal and plastic junction boxes in standard sizes, plus miniature circuit breakers (MCB) and accessories." },
       { key: "accessories", title: "Electrical Accessories", desc: "Connectors, clamps, fittings, and complementary supplies." },
