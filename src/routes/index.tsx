@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, ShieldCheck, Truck, BadgeDollarSign, Headphones } from "lucide-react";
 import { SiteLayout } from "@/components/site/SiteLayout";
+import { BrandLogo, allBrands } from "@/components/site/BrandLogos";
 import { useLang } from "@/i18n/LanguageProvider";
 import hero from "@/assets/hero-electrical.jpg";
 import imgConduit from "@/assets/product-conduit.webp";
@@ -53,7 +54,7 @@ const projectImages: Record<string, string> = {
 };
 
 function Index() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
 
   return (
     <SiteLayout>
@@ -180,6 +181,16 @@ function Index() {
             >
               {t.cta.learnMore} <ArrowRight className="h-4 w-4 rtl:rotate-180" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Brands */}
+      <section className="border-y border-border bg-muted/40 py-14">
+        <div className="container mx-auto px-4 md:px-6">
+          <h2 className="mb-8 text-center text-2xl font-bold text-foreground sm:text-3xl">{lang === "ar" ? "العلامات التجارية التي نوفرها" : "Brands We Supply"}</h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {allBrands.map((b) => <BrandLogo key={b.name} brand={b} />)}
           </div>
         </div>
       </section>
