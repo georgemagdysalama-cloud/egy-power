@@ -21,6 +21,11 @@ const B = {
   chint: { name: "CHINT", color: "#0055a5", font: "font-black tracking-wide" },
   legrand: { name: "legrand", color: "#e30613", font: "font-extrabold" },
   elios: { name: "اليوس", color: "#5b2a86", font: "font-black" },
+  schneider: { name: "Schneider Electric", color: "#3dcd58", font: "font-extrabold" },
+  abb: { name: "ABB", color: "#ff000f", font: "font-black tracking-widest" },
+  hager: { name: "hager", color: "#e30613", font: "font-extrabold" },
+  furse: { name: "Furse", color: "#005eb8", font: "font-black" },
+  erico: { name: "ERICO", color: "#f5a300", font: "font-black tracking-wide" },
 } satisfies Record<string, Brand>;
 
 export const productBrands: Record<string, Brand[]> = {
@@ -29,6 +34,10 @@ export const productBrands: Record<string, Brand[]> = {
   pvc: [B.beit, B.rehab, B.mostafa, B.newega],
   tray: [B.egytray],
   accessories: [B.elsewedy, B.venus, B.chint, B.legrand, B.elios],
+  boxes: [B.schneider, B.abb, B.legrand, B.chint, B.hager, B.venus],
+  panels: [B.schneider, B.abb, B.legrand, B.chint],
+  flexible: [B.alex, B.novo, B.delta, B.pst],
+  earthing: [B.furse, B.erico, B.elsewedy],
 };
 
 export const allBrands: Brand[] = Array.from(
