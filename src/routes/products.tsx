@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { PageHeader } from "@/components/site/PageHeader";
 import { useLang } from "@/i18n/LanguageProvider";
+import { BrandRow } from "@/components/site/BrandLogos";
 import imgConduit from "@/assets/product-conduit.webp";
 import imgFlexible from "@/assets/product-flexible.webp";
 import imgFlexible2 from "@/assets/product-flexible-2.jpg";
@@ -57,7 +58,7 @@ const galleries: Record<string, string[]> = {
 };
 
 function ProductsPage() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   return (
     <SiteLayout>
       <PageHeader eyebrow={t.sections.productsTitle} title={t.nav.products} sub={t.sections.productsSub} />
@@ -117,6 +118,7 @@ function ProductsPage() {
                 </span>
                 <h2 className="mt-2 text-2xl font-bold text-foreground md:text-3xl">{p.title}</h2>
                 <p className="mt-3 text-muted-foreground leading-relaxed">{p.desc}</p>
+                <BrandRow productKey={p.key} label={lang === "ar" ? "العلامات التجارية المعتمدة" : "Approved Brands"} />
               </div>
             </article>
           ))}
