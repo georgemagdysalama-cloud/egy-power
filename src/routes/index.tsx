@@ -54,7 +54,7 @@ const projectImages: Record<string, string> = {
 };
 
 function Index() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
 
   return (
     <SiteLayout>
