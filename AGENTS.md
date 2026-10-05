@@ -1,0 +1,1 @@
+Supplier logos are mapped in the shared BrandLogos component using CDN asset pointers so home and product pages always render the same supplied artwork; retain names for brands without provided images.

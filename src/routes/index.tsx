@@ -26,6 +26,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Egy Power — Electrical Supplies" },
       { property: "og:description", content: "Your trusted partner in electrical materials for projects." },
       { property: "og:url", content: "/" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
     links: [{ rel: "canonical", href: "/" }],
   }),

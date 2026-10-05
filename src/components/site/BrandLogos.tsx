@@ -1,8 +1,16 @@
-type Brand = { name: string; color: string; bg?: string; italic?: boolean; font?: string };
+import deltaLogo from "@/assets/brands/delta.webp.asset.json";
+import gizaLogo from "@/assets/brands/giza.webp.asset.json";
+import elsewedyLogo from "@/assets/brands/elsewedy.webp.asset.json";
+import newegaLogo from "@/assets/brands/newega.webp.asset.json";
+import schneiderLogo from "@/assets/brands/schneider.webp.asset.json";
+import abbLogo from "@/assets/brands/abb.webp.asset.json";
+import furseLogo from "@/assets/brands/furse.webp.asset.json";
+
+type Brand = { name: string; color: string; logo?: string; bg?: string; italic?: boolean; font?: string };
 
 const B = {
-  elsewedy: { name: "ELSEWEDY", color: "#e30613", font: "font-black tracking-tight" },
-  giza: { name: "Giza Cables", color: "#1d4f91", font: "font-extrabold" },
+  elsewedy: { name: "ELSEWEDY", color: "#e30613", logo: elsewedyLogo.url, font: "font-black tracking-tight" },
+  giza: { name: "Giza Cables", color: "#1d4f91", logo: gizaLogo.url, font: "font-extrabold" },
   ecc: { name: "ECC Cables", color: "#0a7d3b", font: "font-black" },
   misk: { name: "مسك", color: "#7a1f2b", font: "font-black" },
   alex: { name: "ALEX", color: "#004b8d", font: "font-black tracking-widest" },
@@ -10,21 +18,21 @@ const B = {
   panasonic: { name: "Panasonic", color: "#0041c0", font: "font-extrabold tracking-tight" },
   wetland: { name: "Wetland", color: "#00875a", font: "font-bold italic" },
   smart: { name: "Smart Tubes", color: "#f28c00", font: "font-extrabold" },
-  delta: { name: "DELTA", color: "#c8102e", font: "font-black tracking-wider" },
+  delta: { name: "DELTA", color: "#c8102e", logo: deltaLogo.url, font: "font-black tracking-wider" },
   novo: { name: "Novo Power", color: "#0b6e99", font: "font-extrabold" },
   beit: { name: "بيت الهندسة", color: "#1f5aa6", font: "font-black" },
   rehab: { name: "الرحاب", color: "#00863d", font: "font-black" },
   mostafa: { name: "مصطفى محمود", color: "#b4121b", font: "font-black" },
-  newega: { name: "NEW EGA", color: "#004c97", font: "font-black tracking-wider" },
+  newega: { name: "NEW EGA", color: "#004c97", logo: newegaLogo.url, font: "font-black tracking-wider" },
   egytray: { name: "EGY Tray", color: "#0c2340", font: "font-black" },
   venus: { name: "VENUS", color: "#e2001a", font: "font-black tracking-widest" },
   chint: { name: "CHINT", color: "#0055a5", font: "font-black tracking-wide" },
   legrand: { name: "legrand", color: "#e30613", font: "font-extrabold" },
   elios: { name: "اليوس", color: "#5b2a86", font: "font-black" },
-  schneider: { name: "Schneider Electric", color: "#3dcd58", font: "font-extrabold" },
-  abb: { name: "ABB", color: "#ff000f", font: "font-black tracking-widest" },
+  schneider: { name: "Schneider Electric", color: "#3dcd58", logo: schneiderLogo.url, font: "font-extrabold" },
+  abb: { name: "ABB", color: "#ff000f", logo: abbLogo.url, font: "font-black tracking-widest" },
   hager: { name: "hager", color: "#e30613", font: "font-extrabold" },
-  furse: { name: "Furse", color: "#005eb8", font: "font-black" },
+  furse: { name: "Furse", color: "#005eb8", logo: furseLogo.url, font: "font-black" },
   erico: { name: "ERICO", color: "#f5a300", font: "font-black tracking-wide" },
 } satisfies Record<string, Brand>;
 
@@ -46,10 +54,14 @@ export const allBrands: Brand[] = Array.from(
 
 export function BrandLogo({ brand }: { brand: Brand }) {
   return (
-    <div className="flex h-14 min-w-28 items-center justify-center rounded-lg border border-border bg-card px-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
-      <span className={`text-lg leading-none ${brand.font ?? "font-bold"}`} style={{ color: brand.color }}>
-        {brand.name}
-      </span>
+    <div title={brand.name} className={`flex h-20 min-w-28 items-center justify-center rounded-lg border border-border px-3 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md ${brand.logo ? "w-40 bg-brand-logo-surface" : "bg-card"}`}>
+      {brand.logo ? (
+        <img src={brand.logo} alt={brand.name} width={136} height={64} className="h-16 w-full object-contain" />
+      ) : (
+        <span className={`text-lg leading-none ${brand.font ?? "font-bold"}`} style={{ color: brand.color }}>
+          {brand.name}
+        </span>
+      )}
     </div>
   );
 }
