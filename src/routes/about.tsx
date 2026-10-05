@@ -12,6 +12,8 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: "About — Egy Power" },
       { property: "og:description", content: "Learn about Egy Power: our vision, mission, and values." },
       { property: "og:url", content: "/about" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),

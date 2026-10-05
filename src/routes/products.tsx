@@ -31,6 +31,8 @@ export const Route = createFileRoute("/products")({
       { property: "og:title", content: "Products — Egy Power" },
       { property: "og:description", content: "EMT/RSC conduits, flexible tubing, wires, junction boxes, accessories." },
       { property: "og:url", content: "/products" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
     ],
     links: [{ rel: "canonical", href: "/products" }],
   }),
