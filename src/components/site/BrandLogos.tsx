@@ -1,3 +1,12 @@
+import panasonicLogo from "@/assets/brands/panasonic.jpg.asset.json";
+import eccLogo from "@/assets/brands/ecc.jpg.asset.json";
+import beitLogo from "@/assets/brands/beit.jpg.asset.json";
+import hagerLogo from "@/assets/brands/hager.jpg.asset.json";
+import mostafaLogo from "@/assets/brands/mostafa.jpg.asset.json";
+import legrandLogo from "@/assets/brands/legrand.jpg.asset.json";
+import smartLogo from "@/assets/brands/smart.png.asset.json";
+import chintLogo from "@/assets/brands/chint.png.asset.json";
+import venusLogo from "@/assets/brands/venus.webp.asset.json";
 import deltaLogo from "@/assets/brands/delta.webp.asset.json";
 import gizaLogo from "@/assets/brands/giza.webp.asset.json";
 import elsewedyLogo from "@/assets/brands/elsewedy.webp.asset.json";
@@ -11,27 +20,27 @@ type Brand = { name: string; color: string; logo?: string; bg?: string; italic?:
 const B = {
   elsewedy: { name: "ELSEWEDY", color: "#e30613", logo: elsewedyLogo.url, font: "font-black tracking-tight" },
   giza: { name: "Giza Cables", color: "#1d4f91", logo: gizaLogo.url, font: "font-extrabold" },
-  ecc: { name: "ECC Cables", color: "#0a7d3b", font: "font-black" },
+  ecc: { name: "ECC Cables", color: "#0a7d3b", logo: eccLogo.url, font: "font-black" },
   misk: { name: "مسك", color: "#7a1f2b", font: "font-black" },
   alex: { name: "ALEX", color: "#004b8d", font: "font-black tracking-widest" },
   pst: { name: "PST", color: "#d71920", font: "font-black italic" },
-  panasonic: { name: "Panasonic", color: "#0041c0", font: "font-extrabold tracking-tight" },
+  panasonic: { name: "Panasonic", color: "#0041c0", logo: panasonicLogo.url, font: "font-extrabold tracking-tight" },
   wetland: { name: "Wetland", color: "#00875a", font: "font-bold italic" },
-  smart: { name: "Smart Tubes", color: "#f28c00", font: "font-extrabold" },
+  smart: { name: "Smart Tubes", color: "#f28c00", logo: smartLogo.url, font: "font-extrabold" },
   delta: { name: "DELTA", color: "#c8102e", logo: deltaLogo.url, font: "font-black tracking-wider" },
   novo: { name: "Novo Power", color: "#0b6e99", font: "font-extrabold" },
-  beit: { name: "بيت الهندسة", color: "#1f5aa6", font: "font-black" },
+  beit: { name: "بيت الهندسة", color: "#1f5aa6", logo: beitLogo.url, font: "font-black" },
   rehab: { name: "الرحاب", color: "#00863d", font: "font-black" },
-  mostafa: { name: "مصطفى محمود", color: "#b4121b", font: "font-black" },
+  mostafa: { name: "مصطفى محمود", color: "#b4121b", logo: mostafaLogo.url, font: "font-black" },
   newega: { name: "NEW EGA", color: "#004c97", logo: newegaLogo.url, font: "font-black tracking-wider" },
   egytray: { name: "EGY Tray", color: "#0c2340", font: "font-black" },
-  venus: { name: "VENUS", color: "#e2001a", font: "font-black tracking-widest" },
-  chint: { name: "CHINT", color: "#0055a5", font: "font-black tracking-wide" },
-  legrand: { name: "legrand", color: "#e30613", font: "font-extrabold" },
+  venus: { name: "VENUS", color: "#e2001a", logo: venusLogo.url, font: "font-black tracking-widest" },
+  chint: { name: "CHINT", color: "#0055a5", logo: chintLogo.url, font: "font-black tracking-wide" },
+  legrand: { name: "legrand", color: "#e30613", logo: legrandLogo.url, font: "font-extrabold" },
   elios: { name: "اليوس", color: "#5b2a86", font: "font-black" },
   schneider: { name: "Schneider Electric", color: "#3dcd58", logo: schneiderLogo.url, font: "font-extrabold" },
   abb: { name: "ABB", color: "#ff000f", logo: abbLogo.url, font: "font-black tracking-widest" },
-  hager: { name: "hager", color: "#e30613", font: "font-extrabold" },
+  hager: { name: "hager", color: "#e30613", logo: hagerLogo.url, font: "font-extrabold" },
   furse: { name: "Furse", color: "#005eb8", logo: furseLogo.url, font: "font-black" },
   erico: { name: "ERICO", color: "#f5a300", font: "font-black tracking-wide" },
 } satisfies Record<string, Brand>;
