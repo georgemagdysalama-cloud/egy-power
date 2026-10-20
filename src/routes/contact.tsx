@@ -96,7 +96,7 @@ function ContactPage() {
             <InfoCard icon={MessageCircle} label="واتساب" value="+20 101 696 6999" ltr />
           </a>
           <InfoCard icon={Phone} label={t.contact.phoneLabel} value="+20 101 696 6999" ltr />
-          <InfoCard icon={Mail} label={t.contact.emailLabel} value="info@egypower.com" ltr />
+          <InfoCard icon={Mail} label={t.contact.emailLabel} value="info@egypower.com.eg" ltr />
           <InfoCard icon={Clock} label={t.contact.hoursLabel} value={t.contact.hours} />
         </aside>
       </section>
