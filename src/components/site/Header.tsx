@@ -41,6 +41,14 @@ export function Header() {
               {l.label}
             </Link>
           ))}
+          <a
+            href="/EGY_POWER_Profile.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+          >
+            {lang === "ar" ? "بروفايل الشركة PDF" : "Company Profile PDF"}
+          </a>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -82,6 +90,15 @@ export function Header() {
                 {l.label}
               </Link>
             ))}
+            <a
+              href="/EGY_POWER_Profile.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="rounded-md px-3 py-2.5 text-sm font-medium text-foreground hover:bg-secondary"
+            >
+              {lang === "ar" ? "بروفايل الشركة PDF" : "Company Profile PDF"}
+            </a>
             <Link
               to="/contact"
               onClick={() => setOpen(false)}
