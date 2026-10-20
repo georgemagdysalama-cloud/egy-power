@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useLang } from "@/i18n/LanguageProvider";
 import logo from "@/assets/logo.png";
+import companyProfile from "@/assets/EGY_POWER.pdf.asset.json";
 
 export function Footer() {
   const { t, lang } = useLang();
@@ -29,7 +30,7 @@ export function Footer() {
             <li><Link to="/services" className="hover:text-primary-foreground">{t.nav.services}</Link></li>
             <li><Link to="/contact" className="hover:text-primary-foreground">{t.nav.contact}</Link></li>
             <li>
-              <a href="/EGY_POWER_Profile.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground">
+              <a href={companyProfile.url} target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground">
                 {lang === "ar" ? "بروفايل الشركة PDF" : "Company Profile PDF"}
               </a>
             </li>
