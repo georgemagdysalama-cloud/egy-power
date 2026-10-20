@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useLang } from "@/i18n/LanguageProvider";
 import logo from "@/assets/logo.png";
+import companyProfile from "@/assets/EGY_POWER.pdf.asset.json";
 
 export function Header() {
   const { t, toggle, lang } = useLang();
@@ -42,7 +43,7 @@ export function Header() {
             </Link>
           ))}
           <a
-            href="/EGY_POWER_Profile.pdf"
+            href={companyProfile.url}
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
@@ -91,7 +92,7 @@ export function Header() {
               </Link>
             ))}
             <a
-              href="/EGY_POWER_Profile.pdf"
+              href={companyProfile.url}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
