@@ -4,7 +4,7 @@ import { useLang } from "@/i18n/LanguageProvider";
 import logo from "@/assets/logo.png";
 
 export function Footer() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const year = new Date().getFullYear();
 
   return (
@@ -28,6 +28,11 @@ export function Footer() {
             <li><Link to="/products" className="hover:text-primary-foreground">{t.nav.products}</Link></li>
             <li><Link to="/services" className="hover:text-primary-foreground">{t.nav.services}</Link></li>
             <li><Link to="/contact" className="hover:text-primary-foreground">{t.nav.contact}</Link></li>
+            <li>
+              <a href="/EGY_POWER_Profile.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground">
+                {lang === "ar" ? "بروفايل الشركة PDF" : "Company Profile PDF"}
+              </a>
+            </li>
           </ul>
         </div>
 
