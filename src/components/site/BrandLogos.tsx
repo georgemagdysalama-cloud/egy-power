@@ -10,6 +10,7 @@ import hagerLogo from "@/assets/brands/hager-2.webp.asset.json";
 import mostafaLogo from "@/assets/brands/mostafa.jpg.asset.json";
 import legrandLogo from "@/assets/brands/legrand-2.webp.asset.json";
 import smartLogo from "@/assets/brands/smart.png.asset.json";
+import pstLogo from "@/assets/brands/pst.webp.asset.json";
 import chintLogo from "@/assets/brands/chint.png.asset.json";
 import venusLogo from "@/assets/brands/venus.webp.asset.json";
 import deltaLogo from "@/assets/brands/delta.webp.asset.json";
