@@ -28,7 +28,7 @@ const B = {
   ecc: { name: "ECC Cables", color: "#0a7d3b", logo: eccLogo.url, font: "font-black" },
   misk: { name: "مسك", color: "#7a1f2b", logo: miskLogo.url, font: "font-black" },
   alex: { name: "ALEX", color: "#004b8d", logo: alexLogo.url, font: "font-black tracking-widest" },
-  pst: { name: "PST", color: "#d71920", font: "font-black italic" },
+  pst: { name: "PST", color: "#d71920", logo: pstLogo.url, font: "font-black italic" },
   panasonic: { name: "Panasonic", color: "#0041c0", logo: panasonicLogo.url, font: "font-extrabold tracking-tight" },
   wetland: { name: "Wetland", color: "#00875a", logo: wetlandLogo.url, font: "font-bold italic" },
   smart: { name: "Smart Tubes", color: "#f28c00", logo: smartLogo.url, font: "font-extrabold" },
