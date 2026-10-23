@@ -10,6 +10,7 @@ import hagerLogo from "@/assets/brands/hager-2.webp.asset.json";
 import mostafaLogo from "@/assets/brands/mostafa.jpg.asset.json";
 import legrandLogo from "@/assets/brands/legrand-2.webp.asset.json";
 import smartLogo from "@/assets/brands/smart.png.asset.json";
+import pstLogo from "@/assets/brands/pst.webp.asset.json";
 import chintLogo from "@/assets/brands/chint.png.asset.json";
 import venusLogo from "@/assets/brands/venus.webp.asset.json";
 import deltaLogo from "@/assets/brands/delta.webp.asset.json";
@@ -28,7 +29,7 @@ const B = {
   ecc: { name: "ECC Cables", color: "#0a7d3b", logo: eccLogo.url, font: "font-black" },
   misk: { name: "مسك", color: "#7a1f2b", logo: miskLogo.url, font: "font-black" },
   alex: { name: "ALEX", color: "#004b8d", logo: alexLogo.url, font: "font-black tracking-widest" },
-  pst: { name: "PST", color: "#d71920", font: "font-black italic" },
+  pst: { name: "PST", color: "#d71920", logo: pstLogo.url, font: "font-black italic" },
   panasonic: { name: "Panasonic", color: "#0041c0", logo: panasonicLogo.url, font: "font-extrabold tracking-tight" },
   wetland: { name: "Wetland", color: "#00875a", logo: wetlandLogo.url, font: "font-bold italic" },
   smart: { name: "Smart Tubes", color: "#f28c00", logo: smartLogo.url, font: "font-extrabold" },
