@@ -72,7 +72,7 @@ function ProductsPage() {
                 ) : (
                   <div className="overflow-hidden rounded-xl">
                     <img
-                      src={images[p.key]}
+                      src={productImages[p.key]}
                       alt={p.title}
                       width={800}
                       height={600}
@@ -82,7 +82,8 @@ function ProductsPage() {
                     />
                   </div>
                 )}
-              </div>
+              </Link>
+
               <div>
                 <span className="text-xs font-bold uppercase tracking-widest text-primary">
                   0{i + 1}
