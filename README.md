@@ -4,7 +4,7 @@
 
 This project was built with [Lovable](https://lovable.dev).
 
-**Live app**: https://egy-power.lovable.app
+**Live app**: https://egy-power.netlify.app (hosted on Netlify)
 
 ## Build with Lovable
 

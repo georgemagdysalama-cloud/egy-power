@@ -38,8 +38,8 @@ function ProductDetail() {
   const backLabel = lang === "ar" ? "كل المنتجات" : "All Products";
   const waText =
     lang === "ar"
-      ? `مرحباً، أرغب في طلب عرض سعر لمنتج: ${product.title}\nhttps://egy-power.lovable.app/product/${key}`
-      : `Hello, I would like a quote for: ${product.title}\nhttps://egy-power.lovable.app/product/${key}`;
+      ? `مرحباً، أرغب في طلب عرض سعر لمنتج: ${product.title}\nhttps://egy-power.netlify.app/product/${key}`
+      : `Hello, I would like a quote for: ${product.title}\nhttps://egy-power.netlify.app/product/${key}`;
   const waUrl = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(waText)}`;
 
   return (
