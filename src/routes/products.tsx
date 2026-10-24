@@ -1,27 +1,10 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { PageHeader } from "@/components/site/PageHeader";
 import { useLang } from "@/i18n/LanguageProvider";
 import { BrandRow } from "@/components/site/BrandLogos";
-import imgConduit from "@/assets/product-conduit.webp";
-import imgFlexible from "@/assets/product-flexible.webp";
-import imgFlexible2 from "@/assets/product-flexible-2.jpg";
-import imgFlexible3 from "@/assets/product-flexible-3.jpg";
-import imgCables from "@/assets/product-cables.webp";
-import imgBoxes from "@/assets/product-boxes.webp";
-import imgAccessories from "@/assets/product-accessories.webp";
-import imgPvc from "@/assets/product-pvc.webp";
-import imgTray from "@/assets/product-tray.webp";
-import imgEarthing from "@/assets/product-earthing.webp";
-import imgEarthing2 from "@/assets/product-earthing-2.webp";
-import imgEarthing3 from "@/assets/product-earthing-3.webp";
-import imgPanels from "@/assets/product-panels.webp";
-import imgBoxes2 from "@/assets/product-boxes-2.webp";
-import imgBreakers from "@/assets/product-breakers.webp";
-import imgCables2 from "@/assets/cables-option-5.webp";
-import imgAccCouplings from "@/assets/product-acc-couplings.webp";
-import imgAccElbows from "@/assets/product-acc-elbows.webp";
-import imgAccMetalBoxes from "@/assets/product-acc-metalboxes.webp";
+import { productImages, galleries } from "@/lib/product-media";
+
 
 export const Route = createFileRoute("/products")({
   head: () => ({
