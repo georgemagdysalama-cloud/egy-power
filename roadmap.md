@@ -1,6 +1,9 @@
 # Task roadmap
 
 ## Open
-- [ ] Smart logo: enlarge "Smart" word — image generated, needs upload + pointer overwrite + verify
-- [ ] Product details page: clicking any product image opens a details page (image gallery, description, brands, WhatsApp quote button)
-- [ ] Shop location: add location button/link on contact page that opens Google Maps with the shop's location (need exact address/coords from user — using current address text until then)
+- [ ] Shop location precision: Google Maps link works but uses the generic address "القاهرة، مصر" — waiting on the user's exact shop location (Google Maps link or coordinates) to make the button open the real spot
+
+## Done
+- [x] Smart logo: enlarged "Smart" word, uploaded and verified
+- [x] Product details page: /product/$key route, all product images (home + products page) open it, gallery, brands, WhatsApp quote button
+- [x] Location button: contact page address card and footer address open Google Maps
