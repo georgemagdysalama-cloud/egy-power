@@ -22,9 +22,11 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
   const WA_NUMBER = "201016966999";
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(t.contact.address)}`;
+
 
   function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -86,7 +88,20 @@ function ContactPage() {
         </form>
 
         <aside className="space-y-4">
-          <InfoCard icon={MapPin} label={t.contact.addressLabel} value={t.contact.address} />
+          <a
+            href={mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-xl transition hover:opacity-90"
+          >
+            <InfoCard
+              icon={MapPin}
+              label={t.contact.addressLabel}
+              value={t.contact.address}
+              hint={lang === "ar" ? "اضغط لفتح الموقع في خرائط جوجل" : "Tap to open in Google Maps"}
+            />
+          </a>
+
           <a
             href={`https://wa.me/${WA_NUMBER}`}
             target="_blank"
@@ -123,8 +138,8 @@ function Field({
 }
 
 function InfoCard({
-  icon: Icon, label, value, ltr,
-}: { icon: ComponentType<{ className?: string }>; label: string; value: string; ltr?: boolean }) {
+  icon: Icon, label, value, ltr, hint,
+}: { icon: ComponentType<{ className?: string }>; label: string; value: string; ltr?: boolean; hint?: string }) {
   return (
     <div className="flex items-start gap-4 rounded-xl border border-border bg-card p-5">
       <span className="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-primary/10 text-primary">
@@ -133,6 +148,7 @@ function InfoCard({
       <div>
         <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{label}</p>
         <p className="mt-1 text-sm font-medium text-foreground" dir={ltr ? "ltr" : undefined}>{value}</p>
+        {hint && <p className="mt-1 text-xs text-primary">{hint}</p>}
       </div>
     </div>
   );

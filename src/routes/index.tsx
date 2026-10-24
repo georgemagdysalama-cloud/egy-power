@@ -3,20 +3,13 @@ import { ArrowRight, ShieldCheck, Truck, BadgeDollarSign, Headphones } from "luc
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { BrandLogo, allBrands } from "@/components/site/BrandLogos";
 import { useLang } from "@/i18n/LanguageProvider";
+import { productImages } from "@/lib/product-media";
 import hero from "@/assets/hero-electrical.jpg";
-import imgConduit from "@/assets/product-conduit.webp";
-import imgFlexible from "@/assets/product-flexible.webp";
-import imgCables from "@/assets/product-cables.webp";
-import imgBoxes from "@/assets/product-boxes.webp";
-import imgAccessories from "@/assets/product-accessories.webp";
-import imgPvc from "@/assets/product-pvc.webp";
-import imgTray from "@/assets/product-tray.webp";
-import imgEarthing from "@/assets/product-earthing.webp";
-import imgPanels from "@/assets/product-panels.webp";
 import projCapital from "@/assets/project-capital.jpg.asset.json";
 import projBeach from "@/assets/project-beach-towers.jpg.asset.json";
 import projRixoz from "@/assets/project-rixoz.jpg.asset.json";
 import projResidential from "@/assets/project-residential.jpg.asset.json";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -34,19 +27,8 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const productImages: Record<string, string> = {
-  conduit: imgConduit,
-  flexible: imgFlexible,
-  cables: imgCables,
-  boxes: imgBoxes,
-  accessories: imgAccessories,
-  pvc: imgPvc,
-  tray: imgTray,
-  panels: imgPanels,
-  earthing: imgEarthing,
-};
-
 const featureIcons = [ShieldCheck, Truck, BadgeDollarSign, Headphones];
+
 
 const projectImages: Record<string, string> = {
   capital: projCapital.url,
@@ -157,7 +139,12 @@ function Index() {
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {t.products.map((p) => (
-              <article key={p.key} className="overflow-hidden rounded-xl border border-border bg-card transition hover:shadow-[var(--shadow-elegant)]">
+              <Link
+                key={p.key}
+                to="/product/$key"
+                params={{ key: p.key }}
+                className="block overflow-hidden rounded-xl border border-border bg-card transition hover:shadow-[var(--shadow-elegant)]"
+              >
                 <div className="aspect-[4/3] overflow-hidden bg-primary/5">
                   <img
                     src={productImages[p.key]}
@@ -173,8 +160,9 @@ function Index() {
                   <h3 className="text-lg font-bold text-foreground">{p.title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
                 </div>
-              </article>
+              </Link>
             ))}
+
           </div>
           <div className="mt-10 text-center">
             <Link

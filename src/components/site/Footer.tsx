@@ -7,6 +7,8 @@ import companyProfile from "@/assets/EGY_POWER.pdf.asset.json";
 export function Footer() {
   const { t, lang } = useLang();
   const year = new Date().getFullYear();
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(t.contact.address)}`;
+
 
   return (
     <footer className="mt-24 border-t border-border bg-primary text-primary-foreground">
@@ -40,7 +42,7 @@ export function Footer() {
         <div>
           <h4 className="mb-3 text-sm font-semibold">{t.footer.contactInfo}</h4>
           <ul className="space-y-2.5 text-sm text-primary-foreground/75">
-            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0" /><span>{t.contact.address}</span></li>
+            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0" /><a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground">{t.contact.address}</a></li>
             <li className="flex items-center gap-2"><Phone className="h-4 w-4 shrink-0" /><a href="tel:+201016966999" dir="ltr">+20 101 696 6999</a></li>
             <li className="flex items-center gap-2"><Mail className="h-4 w-4 shrink-0" /><a href="mailto:info@egypower.com.eg">info@egypower.com.eg</a></li>
           </ul>

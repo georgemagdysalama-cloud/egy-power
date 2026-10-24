@@ -1,27 +1,10 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { PageHeader } from "@/components/site/PageHeader";
 import { useLang } from "@/i18n/LanguageProvider";
 import { BrandRow } from "@/components/site/BrandLogos";
-import imgConduit from "@/assets/product-conduit.webp";
-import imgFlexible from "@/assets/product-flexible.webp";
-import imgFlexible2 from "@/assets/product-flexible-2.jpg";
-import imgFlexible3 from "@/assets/product-flexible-3.jpg";
-import imgCables from "@/assets/product-cables.webp";
-import imgBoxes from "@/assets/product-boxes.webp";
-import imgAccessories from "@/assets/product-accessories.webp";
-import imgPvc from "@/assets/product-pvc.webp";
-import imgTray from "@/assets/product-tray.webp";
-import imgEarthing from "@/assets/product-earthing.webp";
-import imgEarthing2 from "@/assets/product-earthing-2.webp";
-import imgEarthing3 from "@/assets/product-earthing-3.webp";
-import imgPanels from "@/assets/product-panels.webp";
-import imgBoxes2 from "@/assets/product-boxes-2.webp";
-import imgBreakers from "@/assets/product-breakers.webp";
-import imgCables2 from "@/assets/cables-option-5.webp";
-import imgAccCouplings from "@/assets/product-acc-couplings.webp";
-import imgAccElbows from "@/assets/product-acc-elbows.webp";
-import imgAccMetalBoxes from "@/assets/product-acc-metalboxes.webp";
+import { productImages, galleries } from "@/lib/product-media";
+
 
 export const Route = createFileRoute("/products")({
   head: () => ({
@@ -39,25 +22,6 @@ export const Route = createFileRoute("/products")({
   component: ProductsPage,
 });
 
-const images: Record<string, string> = {
-  conduit: imgConduit,
-  flexible: imgFlexible,
-  cables: imgCables,
-  boxes: imgBoxes,
-  accessories: imgAccessories,
-  pvc: imgPvc,
-  tray: imgTray,
-  panels: imgPanels,
-  earthing: imgEarthing,
-};
-
-const galleries: Record<string, string[]> = {
-  earthing: [imgEarthing, imgEarthing2, imgEarthing3],
-  boxes: [imgBoxes, imgBoxes2, imgBreakers],
-  cables: [imgCables, imgCables2],
-  conduit: [imgConduit, imgAccCouplings, imgAccElbows, imgAccMetalBoxes],
-  flexible: [imgFlexible, imgFlexible2, imgFlexible3],
-};
 
 function ProductsPage() {
   const { t, lang } = useLang();
@@ -72,7 +36,12 @@ function ProductsPage() {
               key={p.key}
               className="grid items-center gap-8 rounded-2xl border border-border bg-card p-6 md:grid-cols-2 md:p-8"
             >
-              <div className={`${i % 2 === 1 ? "md:order-2" : ""}`}>
+              <Link
+                to="/product/$key"
+                params={{ key: p.key }}
+                className={`${i % 2 === 1 ? "md:order-2" : ""} block transition hover:opacity-90`}
+              >
+
                 {galleries[p.key] ? (
                   <div className="grid grid-cols-2 gap-3">
                     <div className="col-span-2 overflow-hidden rounded-xl">
@@ -103,7 +72,7 @@ function ProductsPage() {
                 ) : (
                   <div className="overflow-hidden rounded-xl">
                     <img
-                      src={images[p.key]}
+                      src={productImages[p.key]}
                       alt={p.title}
                       width={800}
                       height={600}
@@ -113,7 +82,8 @@ function ProductsPage() {
                     />
                   </div>
                 )}
-              </div>
+              </Link>
+
               <div>
                 <span className="text-xs font-bold uppercase tracking-widest text-primary">
                   0{i + 1}
