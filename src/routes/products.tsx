@@ -22,25 +22,6 @@ export const Route = createFileRoute("/products")({
   component: ProductsPage,
 });
 
-const images: Record<string, string> = {
-  conduit: imgConduit,
-  flexible: imgFlexible,
-  cables: imgCables,
-  boxes: imgBoxes,
-  accessories: imgAccessories,
-  pvc: imgPvc,
-  tray: imgTray,
-  panels: imgPanels,
-  earthing: imgEarthing,
-};
-
-const galleries: Record<string, string[]> = {
-  earthing: [imgEarthing, imgEarthing2, imgEarthing3],
-  boxes: [imgBoxes, imgBoxes2, imgBreakers],
-  cables: [imgCables, imgCables2],
-  conduit: [imgConduit, imgAccCouplings, imgAccElbows, imgAccMetalBoxes],
-  flexible: [imgFlexible, imgFlexible2, imgFlexible3],
-};
 
 function ProductsPage() {
   const { t, lang } = useLang();
@@ -55,7 +36,12 @@ function ProductsPage() {
               key={p.key}
               className="grid items-center gap-8 rounded-2xl border border-border bg-card p-6 md:grid-cols-2 md:p-8"
             >
-              <div className={`${i % 2 === 1 ? "md:order-2" : ""}`}>
+              <Link
+                to="/product/$key"
+                params={{ key: p.key }}
+                className={`${i % 2 === 1 ? "md:order-2" : ""} block transition hover:opacity-90`}
+              >
+
                 {galleries[p.key] ? (
                   <div className="grid grid-cols-2 gap-3">
                     <div className="col-span-2 overflow-hidden rounded-xl">
