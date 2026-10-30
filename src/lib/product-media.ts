@@ -17,6 +17,15 @@ import imgEarthing from "@/assets/product-earthing.webp";
 import imgEarthing2 from "@/assets/product-earthing-2.webp";
 import imgEarthing3 from "@/assets/product-earthing-3.webp";
 import imgPanels from "@/assets/product-panels.webp";
+import imgTrayAcc from "@/assets/tray-accessories.jpg.asset.json";
+import imgTrayStrut from "@/assets/tray-strut-channel.jpg.asset.json";
+import imgFlexColored from "@/assets/flexible-colored.jpg.asset.json";
+import imgPvcDark from "@/assets/pvc-fittings-dark.jpg.asset.json";
+import imgPvcInstalled from "@/assets/pvc-installed.jpg.asset.json";
+import imgPvcFittings from "@/assets/pvc-fittings.jpg.asset.json";
+import imgPanelsOpen from "@/assets/panels-open.jpg.asset.json";
+import imgPanelsLoadCenter from "@/assets/panels-load-center.jpg.asset.json";
+import imgPanelsDb from "@/assets/panels-db.webp.asset.json";
 
 export const productImages: Record<string, string> = {
   conduit: imgConduit,
@@ -32,13 +41,13 @@ export const productImages: Record<string, string> = {
 
 export const galleries: Record<string, string[]> = {
   conduit: [imgConduit, imgAccCouplings, imgAccElbows, imgAccMetalBoxes],
-  flexible: [imgFlexible, imgFlexible2, imgFlexible3],
+  flexible: [imgFlexible, imgFlexible2, imgFlexible3, imgFlexColored.url],
   cables: [imgCables, imgCables2],
   boxes: [imgBoxes, imgBoxes2, imgBreakers],
   accessories: [imgAccessories],
-  pvc: [imgPvc],
-  tray: [imgTray],
-  panels: [imgPanels],
+  pvc: [imgPvc, imgPvcFittings.url, imgPvcDark.url, imgPvcInstalled.url],
+  tray: [imgTray, imgTrayAcc.url, imgTrayStrut.url],
+  panels: [imgPanels, imgPanelsOpen.url, imgPanelsLoadCenter.url, imgPanelsDb.url],
   earthing: [imgEarthing, imgEarthing2, imgEarthing3],
 };
 
