@@ -26,6 +26,16 @@ import imgPvcFittings from "@/assets/pvc-fittings.jpg.asset.json";
 import imgPanelsOpen from "@/assets/panels-open.jpg.asset.json";
 import imgPanelsLoadCenter from "@/assets/panels-load-center.jpg.asset.json";
 import imgPanelsDb from "@/assets/panels-db.webp.asset.json";
+import imgAccTermBlocks from "@/assets/acc-terminal-blocks.jpg.asset.json";
+import imgAccAnchors from "@/assets/acc-anchors.jpg.asset.json";
+import imgAccCableTies from "@/assets/acc-cable-ties.jpg.asset.json";
+import imgAccPvcBox from "@/assets/acc-pvc-box.webp.asset.json";
+import imgAccSteelTies from "@/assets/acc-steel-cable-ties.jpg.asset.json";
+import imgAccCopperLugs from "@/assets/acc-copper-lugs.jpg.asset.json";
+import imgAccTape from "@/assets/acc-insulation-tape.png.asset.json";
+import imgAccTermConnectors from "@/assets/acc-terminal-connectors.png.asset.json";
+import imgAccHeatShrink from "@/assets/acc-heat-shrink.png.asset.json";
+import imgAccCableGlands from "@/assets/acc-cable-glands.png.asset.json";
 
 export const productImages: Record<string, string> = {
   conduit: imgConduit,
@@ -44,7 +54,7 @@ export const galleries: Record<string, string[]> = {
   flexible: [imgFlexible, imgFlexible2, imgFlexible3, imgFlexColored.url],
   cables: [imgCables, imgCables2],
   boxes: [imgBoxes, imgBoxes2, imgBreakers],
-  accessories: [imgAccessories],
+  accessories: [imgAccessories, imgAccTermBlocks.url, imgAccAnchors.url, imgAccCableTies.url, imgAccPvcBox.url, imgAccSteelTies.url, imgAccCopperLugs.url, imgAccTape.url, imgAccTermConnectors.url, imgAccHeatShrink.url, imgAccCableGlands.url],
   pvc: [imgPvc, imgPvcFittings.url, imgPvcDark.url, imgPvcInstalled.url],
   tray: [imgTray, imgTrayAcc.url, imgTrayStrut.url],
   panels: [imgPanels, imgPanelsOpen.url, imgPanelsLoadCenter.url, imgPanelsDb.url],
