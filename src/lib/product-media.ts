@@ -51,11 +51,11 @@ export const productImages: Record<string, string> = {
 
 export const galleries: Record<string, string[]> = {
   conduit: [imgConduit, imgAccCouplings, imgAccElbows, imgAccMetalBoxes],
-  flexible: [imgFlexible, imgFlexible2, imgFlexible3, imgFlexColored.url],
+  flexible: [imgFlexible, imgFlexible2, imgFlexible3],
   cables: [imgCables, imgCables2],
   boxes: [imgBoxes, imgBoxes2, imgBreakers],
   accessories: [imgAccessories, imgAccTermBlocks.url, imgAccAnchors.url, imgAccCableTies.url, imgAccPvcBox.url, imgAccSteelTies.url, imgAccCopperLugs.url, imgAccTape.url, imgAccTermConnectors.url, imgAccHeatShrink.url, imgAccCableGlands.url],
-  pvc: [imgPvc, imgPvcFittings.url, imgPvcDark.url, imgPvcInstalled.url],
+  pvc: [imgPvc, imgFlexColored.url, imgPvcFittings.url, imgPvcDark.url, imgPvcInstalled.url],
   tray: [imgTray, imgTrayAcc.url, imgTrayStrut.url],
   panels: [imgPanels, imgPanelsOpen.url, imgPanelsLoadCenter.url, imgPanelsDb.url],
   earthing: [imgEarthing, imgEarthing2, imgEarthing3],
