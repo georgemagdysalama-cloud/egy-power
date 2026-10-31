@@ -7,7 +7,7 @@ import companyProfile from "@/assets/EGY_POWER.pdf.asset.json";
 export function Footer() {
   const { t, lang } = useLang();
   const year = new Date().getFullYear();
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(t.contact.address)}`;
+  const mapsUrl = "https://www.google.com/maps/search/?api=1&query=30.054721,31.243123";
 
 
   return (
