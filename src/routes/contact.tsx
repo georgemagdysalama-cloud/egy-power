@@ -25,7 +25,7 @@ function ContactPage() {
   const { t, lang } = useLang();
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
   const WA_NUMBER = "201016966999";
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(t.contact.address)}`;
+  const mapsUrl = "https://www.google.com/maps/search/?api=1&query=30.054721,31.243123";
 
 
   function onSubmit(e: FormEvent<HTMLFormElement>) {
