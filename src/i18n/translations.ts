@@ -11,6 +11,7 @@ export const translations = {
       products: "المنتجات",
       services: "الخدمات",
       contact: "تواصل معنا",
+      recommend: "اقترح منتجاتك",
     },
     cta: {
       quote: "اطلب عرض سعر",
