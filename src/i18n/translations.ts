@@ -298,5 +298,11 @@ export type Dict = {
     addressLabel: string; phoneLabel: string; emailLabel: string; hoursLabel: string;
     hours: string; address: string; success: string;
   };
+  finder: {
+    title: string; sub: string; placeholder: string; examplesLabel: string;
+    examples: ReadonlyArray<string>;
+    submit: string; loading: string; resultsTitle: string; emptyNote: string;
+    disclaimer: string; quote: string; startOver: string;
+  };
   footer: { tag: string; quickLinks: string; contactInfo: string; rights: string };
 };
