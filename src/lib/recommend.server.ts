@@ -8,25 +8,36 @@ import { createLovableAiGatewayRunIdFetch } from "./ai/run-id";
 const GATEWAY_URL = "https://ai.gateway.lovable.dev/v1";
 const MODEL = "openai/gpt-6-astra";
 
-const CATALOG_KEYS = translations.ar.products.map((p) => p.key) as [string, ...string[]];
+const CATALOG_KEYS = [
+  "conduit",
+  "flexible",
+  "cables",
+  "boxes",
+  "accessories",
+  "pvc",
+  "tray",
+  "panels",
+  "earthing",
+] as const;
 
-const resultSchema = z
-  .object({
-    summary: z.string(),
-    recommendations: z
-      .array(
-        z
-          .object({
-            key: z.enum(CATALOG_KEYS),
-            reason: z.string(),
-          })
-          .strict(),
-      )
-      .strict(),
-  })
-  .strict();
+const resultSchema = z.object({
+  summary: z.string(),
+  recommendations: z
+    .array(
+      z
+        .object({
+          key: z.enum(CATALOG_KEYS),
+          reason: z.string(),
+        })
+        .strict(),
+    )
+    .max(4),
+});
 
-export type ProductFinderResult = z.infer<typeof resultSchema>;
+export type ProductFinderResult = {
+  summary: string;
+  recommendations: { key: (typeof CATALOG_KEYS)[number]; reason: string }[];
+};
 
 function buildCatalogText(lang: Lang) {
   return translations[lang].products
