@@ -239,6 +239,27 @@ export const translations = {
       address: "Cairo, Arab Republic of Egypt",
       success: "Your message has been sent! We will be in touch shortly.",
     },
+    finder: {
+      title: "Product Finder",
+      sub: "Describe your electrical supplies needs in your own words, and we'll instantly suggest the matching categories from our catalog.",
+      placeholder:
+        "Example: I need 20mm EMT conduits with couplings, elbows and boxes, plus 4mm copper wires for a residential building…",
+      examplesLabel: "Quick examples",
+      examples: [
+        "Residential project: EMT conduits, wires, junction boxes and breakers",
+        "Industrial project: cable tray, distribution panels and earthing system",
+        "Metal conduits with all accessories: couplings, connectors, elbows and boxes",
+        "Insulated flexible conduit and copper cables in various gauges for machines",
+      ],
+      submit: "Suggest the right products",
+      loading: "Analyzing your needs…",
+      resultsTitle: "Suggested products for you",
+      emptyNote:
+        "We couldn't match any categories — try a more specific description such as project type, specs and sizes.",
+      disclaimer: "Preliminary suggestions from the AI advisor — our team confirms final details and pricing.",
+      quote: "Request a quote on WhatsApp",
+      startOver: "New request",
+    },
     footer: {
       tag: "Reliable electrical supplies for better projects.",
       quickLinks: "Quick Links",
@@ -253,7 +274,7 @@ export type Dict = {
   dir: "rtl" | "ltr";
   brand: string;
   brandSub: string;
-  nav: { home: string; about: string; products: string; services: string; contact: string };
+  nav: { home: string; about: string; products: string; services: string; contact: string; recommend: string };
   cta: { quote: string; contact: string; explore: string; learnMore: string };
   switchLang: string;
   hero: { eyebrow: string; title: string; subtitle: string; stat1: string; stat2: string; stat3: string };
