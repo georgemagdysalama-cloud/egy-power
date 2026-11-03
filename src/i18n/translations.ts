@@ -11,6 +11,7 @@ export const translations = {
       products: "المنتجات",
       services: "الخدمات",
       contact: "تواصل معنا",
+      recommend: "اقترح منتجاتك",
     },
     cta: {
       quote: "اطلب عرض سعر",
@@ -105,6 +106,27 @@ export const translations = {
       address: "القاهرة، جمهورية مصر العربية",
       success: "تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.",
     },
+    finder: {
+      title: "اقترح منتجاتك",
+      sub: "اكتب احتياجك من مستلزمات الكهرباء بالتفصيل، وسنقترح لك الفئات المناسبة من كتالوجنا فوراً.",
+      placeholder:
+        "مثال: محتاج مواسير EMT مقاس 20 مع جلب وأكواع وعلب، وكابلات نحاس 4 مم لمشروع شقق سكنية…",
+      examplesLabel: "أمثلة سريعة",
+      examples: [
+        "مشروع سكني: مواسير EMT وكابلات وعلب توصيل وقواطع",
+        "مشروع صناعي: كابل تراي ولوحات توزيع ونظام تأريض",
+        "توريد مواسير معدنية بكل إكسسواراتها: جلب وأفياش وأكواع وبواط",
+        "فلكسبل معزول وكابلات نحاس بمقاطع مختلفة لماكينات",
+      ],
+      submit: "اقترح المنتجات المناسبة",
+      loading: "جاري تحليل احتياجك…",
+      resultsTitle: "منتجات مقترحة لك",
+      emptyNote:
+        "لم نتمكن من تحديد فئات مناسبة — جرّب وصفاً أدق مثل نوع المشروع والمواصفات والمقاسات المطلوبة.",
+      disclaimer: "اقتراحات مبدئية من المساعد الذكي — فريق إيجي باور يؤكد التفاصيل والأسعار النهائية.",
+      quote: "اطلب عرض سعر واتساب",
+      startOver: "طلب جديد",
+    },
     footer: {
       tag: "توريدات كهربائية موثوقة لمشروعات أفضل.",
       quickLinks: "روابط سريعة",
@@ -122,6 +144,7 @@ export const translations = {
       products: "Products",
       services: "Services",
       contact: "Contact",
+      recommend: "Product Finder",
     },
     cta: {
       quote: "Request a Quote",
@@ -216,6 +239,27 @@ export const translations = {
       address: "Cairo, Arab Republic of Egypt",
       success: "Your message has been sent! We will be in touch shortly.",
     },
+    finder: {
+      title: "Product Finder",
+      sub: "Describe your electrical supplies needs in your own words, and we'll instantly suggest the matching categories from our catalog.",
+      placeholder:
+        "Example: I need 20mm EMT conduits with couplings, elbows and boxes, plus 4mm copper wires for a residential building…",
+      examplesLabel: "Quick examples",
+      examples: [
+        "Residential project: EMT conduits, wires, junction boxes and breakers",
+        "Industrial project: cable tray, distribution panels and earthing system",
+        "Metal conduits with all accessories: couplings, connectors, elbows and boxes",
+        "Insulated flexible conduit and copper cables in various gauges for machines",
+      ],
+      submit: "Suggest the right products",
+      loading: "Analyzing your needs…",
+      resultsTitle: "Suggested products for you",
+      emptyNote:
+        "We couldn't match any categories — try a more specific description such as project type, specs and sizes.",
+      disclaimer: "Preliminary suggestions from the AI advisor — our team confirms final details and pricing.",
+      quote: "Request a quote on WhatsApp",
+      startOver: "New request",
+    },
     footer: {
       tag: "Reliable electrical supplies for better projects.",
       quickLinks: "Quick Links",
@@ -230,7 +274,7 @@ export type Dict = {
   dir: "rtl" | "ltr";
   brand: string;
   brandSub: string;
-  nav: { home: string; about: string; products: string; services: string; contact: string };
+  nav: { home: string; about: string; products: string; services: string; contact: string; recommend: string };
   cta: { quote: string; contact: string; explore: string; learnMore: string };
   switchLang: string;
   hero: { eyebrow: string; title: string; subtitle: string; stat1: string; stat2: string; stat3: string };
@@ -253,6 +297,12 @@ export type Dict = {
     title: string; sub: string; name: string; email: string; phone: string; message: string; send: string;
     addressLabel: string; phoneLabel: string; emailLabel: string; hoursLabel: string;
     hours: string; address: string; success: string;
+  };
+  finder: {
+    title: string; sub: string; placeholder: string; examplesLabel: string;
+    examples: ReadonlyArray<string>;
+    submit: string; loading: string; resultsTitle: string; emptyNote: string;
+    disclaimer: string; quote: string; startOver: string;
   };
   footer: { tag: string; quickLinks: string; contactInfo: string; rights: string };
 };
