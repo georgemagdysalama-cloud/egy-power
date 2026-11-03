@@ -5,7 +5,7 @@ import { translations } from "@/i18n/translations";
 const CONTACT = {
   phone: "01016966999",
   whatsapp: "https://wa.me/201016966999",
-  website: "https://egy-power.lovable.app",
+  website: "https://egy-power.netlify.app",
 };
 
 export default defineTool({
