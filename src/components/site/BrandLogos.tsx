@@ -20,6 +20,7 @@ import newegaLogo from "@/assets/brands/newega.webp.asset.json";
 import schneiderLogo from "@/assets/brands/schneider-2.webp.asset.json";
 import abbLogo from "@/assets/brands/abb.webp.asset.json";
 import furseLogo from "@/assets/brands/furse.webp.asset.json";
+import lsLogo from "@/assets/brands/ls.png.asset.json";
 
 type Brand = { name: string; color: string; logo?: string; bg?: string; italic?: boolean; font?: string };
 
@@ -49,6 +50,7 @@ const B = {
   hager: { name: "hager", color: "#e30613", logo: hagerLogo.url, font: "font-extrabold" },
   furse: { name: "Furse", color: "#005eb8", logo: furseLogo.url, font: "font-black" },
   erico: { name: "ERICO", color: "#f5a300", font: "font-black tracking-wide" },
+  ls: { name: "LS", color: "#003478", logo: lsLogo.url, font: "font-black" },
 } satisfies Record<string, Brand>;
 
 export const productBrands: Record<string, Brand[]> = {
@@ -57,8 +59,8 @@ export const productBrands: Record<string, Brand[]> = {
   pvc: [B.beit, B.rehab, B.mostafa, B.newega],
   tray: [B.egytray],
   accessories: [B.elsewedy, B.venus, B.chint, B.legrand, B.elios],
-  boxes: [B.schneider, B.abb, B.legrand, B.chint, B.hager, B.venus],
-  panels: [B.schneider, B.abb, B.legrand, B.chint],
+  boxes: [B.schneider, B.abb, B.legrand, B.chint, B.hager, B.venus, B.ls],
+  panels: [B.schneider, B.abb, B.legrand, B.chint, B.ls],
   flexible: [B.alex, B.novo, B.delta, B.pst],
   earthing: [B.furse, B.erico, B.elsewedy],
 };
